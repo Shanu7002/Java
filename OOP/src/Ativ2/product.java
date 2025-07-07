@@ -1,4 +1,4 @@
-package Ativ2.entities;
+package Ativ2;
 
 public class product{
         public String name;

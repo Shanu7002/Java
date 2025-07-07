@@ -1,4 +1,4 @@
-package Ativ1.entities;
+package Ativ1;
 
 public class Product{
     public double width;

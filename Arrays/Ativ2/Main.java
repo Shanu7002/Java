@@ -1,4 +1,4 @@
-package Ativ2;
+package Arrays.Ativ2;
 
 import java.util.Locale;
 import java.util.Scanner;

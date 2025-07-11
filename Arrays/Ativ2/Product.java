@@ -1,4 +1,4 @@
-package Ativ2;
+package Arrays.Ativ2;
 
 public class Product {
 

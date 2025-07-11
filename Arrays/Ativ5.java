@@ -47,7 +47,7 @@ public class Ativ5 {
 
         for(int i=0; i<n; i++) {
             if (idades[i] < 16) {
-                System.out.printf("%s\n", nomes[i]);
+
             }
         }
 

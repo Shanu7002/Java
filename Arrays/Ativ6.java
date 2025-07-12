@@ -12,7 +12,7 @@ public class Ativ6 {
         int n = sc.nextInt();
 
         int[] quantidade = new int[n];
-        int[] quantidadesPares = new int[n];
+        int quantidadesPares = 0;
 
         for(int i = 0; i < quantidade.length; i++){
             System.out.print("Digite um numero: ");
@@ -23,11 +23,11 @@ public class Ativ6 {
         for(int i = 0; i < quantidade.length; i++){
             if(quantidade[i] % 2 == 0){
                 System.out.print(quantidade[i] + " ");
-                quantidadesPares[0] += 1;
+                quantidadesPares += 1;
             }
         }
         System.out.println();
-        System.out.println("QUANTIDADE DE PARES = " + quantidadesPares[0]);
+        System.out.println("QUANTIDADE DE PARES = " + quantidadesPares);
 
 
         sc.close();

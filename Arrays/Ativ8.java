@@ -25,13 +25,8 @@ public class Ativ8 {
         System.out.println("VETOR RESULTANTE: ");
         for(int i = 0; i < n; i++){
             vetorC[i] = vetorA[i] + vetorB[i];
-            System.out.println(vetorC[i]) ;
+            System.out.println(vetorC[i]);
         }
-
-
-
-
-
 
         sc.close();
     }

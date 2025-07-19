@@ -13,6 +13,8 @@ public class Order {
 
     public List<OrderItem> Items = new ArrayList<>();
 
+    private static final SimpleDateFormat sdfWithTime = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
     public Order() {
     }
 
@@ -55,6 +57,7 @@ public class Order {
     }
 
     public String toString(){
-        return "Order moment: " + moment.toString() + "\n Order status: " + status.toString();
+        String statusFormated = status.toString().substring(0, 1).toUpperCase() + status.toString().substring(1).toLowerCase();
+        return "Order moment: " + sdfWithTime.format(moment) + "\nOrder status: " + statusFormated;
     }
 }

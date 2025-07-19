@@ -32,17 +32,27 @@ public class Main {
         //inicializa o cliente
         Client client = new Client(name, email, date);
 
+        //dados de status + horario de entrada
         System.out.println("Enter order status: ");
         System.out.print("Status: ");
         String statusStr = sc.nextLine();
         Date moment = new Date();
-        OrderStatus status = OrderStatus.valueOf(statusStr);
+        OrderStatus status = OrderStatus.valueOf(statusStr.toUpperCase());
 
+        //inicializa o order
         Order order = new Order(moment, status);
 
-        System.out.println(order);
+        System.out.println("Enter order data: ");
+        System.out.print("How many items to this order ");
+        int n = sc.nextInt();
+        for(int i = 0; i < n; i++){
+
+        }
 
 
+        System.out.println("ORDER SUMMARY: ");
+        System.out.println(order.toString());
+        System.out.println(client.toString());
 
 
         sc.close();

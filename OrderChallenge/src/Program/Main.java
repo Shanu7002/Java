@@ -41,7 +41,7 @@ public class Main {
         //add status and time to the list
         Order order = new Order(moment, status);
 
-        //for to add how much products the client want to
+        //for to add how many products the client want to
         System.out.println("Enter order data: ");
         System.out.print("How many items to this order? ");
         int n = sc.nextInt();

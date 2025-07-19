@@ -11,7 +11,7 @@ public class Order {
     private Date moment;
     private OrderStatus status;
 
-    public List<OrderItem> Items = new ArrayList<>();
+    private final List<OrderItem> Items = new ArrayList<>();
 
     private static final SimpleDateFormat sdfWithTime = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 

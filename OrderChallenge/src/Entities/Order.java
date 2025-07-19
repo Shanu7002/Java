@@ -39,6 +39,9 @@ public class Order {
         this.status = status;
     }
 
+    public List<OrderItem> getItems() {
+        return Items;
+    }
     public void addItem(OrderItem item) {
         Items.add(item);
     }
@@ -47,9 +50,10 @@ public class Order {
         Items.remove(item);
     }
 
-    Double total;
+
 
     public Double getTotal() {
+        double total = 0.0;
         for(OrderItem c : Items){
             total += c.getSubTotal();
         }
@@ -59,5 +63,8 @@ public class Order {
     public String toString(){
         String statusFormated = status.toString().substring(0, 1).toUpperCase() + status.toString().substring(1).toLowerCase();
         return "Order moment: " + sdfWithTime.format(moment) + "\nOrder status: " + statusFormated;
+    }
+    public String toStringTotal(){
+        return String.format("Total price: $%.2f", getTotal());
     }
 }

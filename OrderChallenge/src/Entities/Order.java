@@ -50,8 +50,6 @@ public class Order {
         Items.remove(item);
     }
 
-
-
     public Double getTotal() {
         double total = 0.0;
         for(OrderItem c : Items){

@@ -25,8 +25,7 @@ public class Main {
         System.out.print("Email: ");
         String email = sc.nextLine();
         System.out.print("Birth date (DD/MM/YYYY): ");
-        String birthDate = sc.nextLine();
-        Date date = sdf.parse(birthDate);
+        Date date = sdf.parse(sc.nextLine());
 
         //add new client to the list
         Client client = new Client(name, email, date);
@@ -62,8 +61,8 @@ public class Main {
 
         //print the final result
         System.out.println("ORDER SUMMARY: ");
-        System.out.println(order.toString());
-        System.out.println(client.toString());
+        System.out.println(order);
+        System.out.println(client);
         System.out.println("Order items: ");
         for(OrderItem item : order.getItems()){
             System.out.println(item.toString());

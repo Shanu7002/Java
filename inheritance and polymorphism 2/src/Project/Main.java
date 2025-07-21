@@ -46,7 +46,6 @@ public class Main {
         System.out.println();
         System.out.println("TOTAL TAXES: $" + String.format("%.2f", sum));
 
-
         sc.close();
     }
 }

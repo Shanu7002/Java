@@ -7,8 +7,8 @@ public class Individual extends TaxPayer {
     }
 
 
-    public Individual(String name, Double anualIncome, Double healthExpenditures) {
-        super(name, anualIncome);
+    public Individual(String name, Double annualIncome, Double healthExpenditures) {
+        super(name, annualIncome);
         this.healthExpenditures = healthExpenditures;
     }
 
@@ -22,6 +22,6 @@ public class Individual extends TaxPayer {
 
     @Override
     public Double tax() {
-        return (getAnualIncome() * 0.25) - (getHealthExpenditures() * 0.50);
+        return (getAnnualIncome() * 0.25) - (getHealthExpenditures() * 0.50);
     }
 }

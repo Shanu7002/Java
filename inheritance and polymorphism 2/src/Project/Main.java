@@ -24,17 +24,17 @@ public class Main {
             char ch = sc.next().charAt(0);
             System.out.print("Name: ");
             String name = sc.next();
-            System.out.print("Anual income: ");
-            double anualIncome = sc.nextDouble();
+            System.out.print("Annual income: ");
+            double annualIncome = sc.nextDouble();
 
             if(ch == 'i') {
                 System.out.print("Health expenditures: ");
                 double healthExpenditures = sc.nextDouble();
-                taxPayers.add(new Individual(name, anualIncome, healthExpenditures));
+                taxPayers.add(new Individual(name, annualIncome, healthExpenditures));
             } else if (ch == 'c') {
                 System.out.print("Number of employees: ");
                 Integer numberOfEmployees = sc.nextInt();
-                taxPayers.add(new Company(name, anualIncome, numberOfEmployees));
+                taxPayers.add(new Company(name, annualIncome, numberOfEmployees));
             }
         }
         System.out.println();
